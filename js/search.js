@@ -5,6 +5,16 @@ new Vue({
 		titleSub: '이미지 검색',
 		search: '',
 		isSearch: false,
+		products: [],
+	},
+	created() {
+		axios.get('../json/products.json')
+		.then((r) => {
+			this.products = r.data;
+		})
+		.catch((err) => {
+			console.log(err);
+		});
 	},
 	methods: {
 		onSearchRemove(e) {

@@ -1,14 +1,14 @@
 [
-	{"title": "좋은상품", "src": "../img/best1.jpg", "price": "15.00"},
-	{"title": "좋은상품", "src": "../img/best2.jpg", "price": "18.00"},
-	{"title": "좋은상품", "src": "../img/best3.jpg", "price": "17.00"},
-	{"title": "나쁜상품", "src": "../img/best4.jpg", "price": "11.00"},
-	{"title": "나쁜상품", "src": "../img/image1.jpg", "price": "199.00"},
-	{"title": "비싼상품", "src": "../img/image2.jpg", "price": "155.00"},
-	{"title": "비싼상품", "src": "../img/image3.jpg", "price": "20.00"},
-	{"title": "질좋은 상품", "src": "../img/image4.jpg", "price": "25.00"},
-	{"title": "질좋은 상품", "src": "../img/image5.jpg", "price": "129.99"},
-	{"title": "질좋은 상품", "src": "../img/image6.jpg", "price": "9.00"},
-	{"title": "가지고 싶은 상품", "src": "../img/image7.jpg", "price": "99.99"},
-	{"title": "가지고 싶은 상품", "src": "../img/image8.jpg", "price": "18.00"}
+	{"id": 1, "title": "좋은상품", "src": "../img/best1.jpg", "price": "15.00"},
+	{"id": 2, "title": "좋은상품", "src": "../img/best2.jpg", "price": "18.00"},
+	{"id": 3, "title": "좋은상품", "src": "../img/best3.jpg", "price": "17.00"},
+	{"id": 4, "title": "나쁜상품", "src": "../img/best4.jpg", "price": "11.00"},
+	{"id": 5, "title": "나쁜상품", "src": "../img/image1.jpg", "price": "199.00"},
+	{"id": 6, "title": "비싼상품", "src": "../img/image2.jpg", "price": "155.00"},
+	{"id": 7, "title": "비싼상품", "src": "../img/image3.jpg", "price": "20.00"},
+	{"id": 8, "title": "질좋은 상품", "src": "../img/image4.jpg", "price": "25.00"},
+	{"id": 9, "title": "질좋은 상품", "src": "../img/image5.jpg", "price": "129.99"},
+	{"id": 10, "title": "질좋은 상품", "src": "../img/image6.jpg", "price": "9.00"},
+	{"id": 11, "title": "가지고 싶은 상품", "src": "../img/image7.jpg", "price": "99.99"},
+	{"id": 12, "title": "가지고 싶은 상품", "src": "../img/image8.jpg", "price": "18.00"}
 ]
