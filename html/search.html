@@ -19,24 +19,25 @@
 				</h1>
 			</div>
 			<form action="#" class="form-search">
-				<input v-model="search" type="text" class="form-control p-2 input-search">
+				<input @keyup="onSearch" v-model="search" type="text" class="form-control p-2 input-search">
 				<i v-show="search.length" @click="onSearchRemove" class="fa fa-times-circle bt-remove"></i>
 			</form>
-			<p v-show="isSearch" class="text-dark py-3">검색어: {{search}}</p>
+			<p v-show="search.length" class="text-dark py-3">검색어: {{search}}</p>
 			<div class="list-wrapper">
 				<ul class="list-wrap">
-					<li class="list">
+					<li class="list" v-for="v in searchProducts" :key="v.id">
 						<div class="img-wrap">
-							<img src="../img/image1.jpg" alt="상품" class="w-100">
+							<img :src="v.src" alt="상품" class="w-100">
 						</div>
-						<div class="title">좋은상품</div>
-						<div class="price">$15.00</div>
+						<div class="title">{{v.title}}</div>
+						<div class="price">${{v.price}}</div>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="../js/lodash.min.js"></script>
 	<script src="../js/axios.min.js"></script>
 	<script type="module" src="../js/search.js"></script>
 </body>

@@ -4,6 +4,18 @@ ul, li {list-style: none; padding: 0; margin: 0;}
 .form-search .bt-remove:hover {color: #b90909;}
 .list-wrapper {margin: 1em 0;}
 .list-wrapper ul.list-wrap {display: flex; flex-wrap: wrap;}
-.list-wrapper li.list {width: 25%; border: 1px solid #ccc; padding: 0.5em;}
+.list-wrapper li.list {width: 24%; margin: 0.5%; border: 1px solid #ccc; padding: 0.5em;}
 .list-wrapper li.list .title {padding: 0.5em 0; font-size: 1.25em; border-bottom: 1px solid #ccc;}
 .list-wrapper li.list .price {padding: 0.5em 0; text-align: right; color:#065786;}
+
+@media screen and (max-width: 991px) {
+	.list-wrapper li.list {width: 32.3333%; margin: 0.5%;}
+}
+
+@media screen and (max-width: 767px) {
+	.list-wrapper li.list {width: 48%; margin: 1%;}
+}
+
+@media screen and (max-width: 575px) {
+	.list-wrapper li.list {width: 98%; margin: 1%;}
+}
