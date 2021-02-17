@@ -1,0 +1,17 @@
+<script>
+	var a = {
+		fn: function() {
+			console.log(this);
+		},
+		fn2: () => {
+			console.log(this);
+		},
+		fn3() {
+			console.log(this);
+		}
+	}
+
+	a.fn();
+	a.fn2();
+	a.fn3();
+</script>

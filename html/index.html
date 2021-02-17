@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vue Hello</title>
+	<link rel="stylesheet" href="../css/all.min.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/index.css">
+	<script src="../js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+	<div id="app">
+		<div class="container text-center">
+
+			<h1 class="my-5 border text-center" v-show="title.length">{{ title }}</h1>
+			<input type="text" class="form-control my-2" v-model="title">
+
+			<button class="btn btn-primary my-2" v-on:click="onBtnClick">눌러봐</button>
+			<div v-if="boxShow">
+				<div class="box bg-danger"></div>
+				<div class="box bg-success"></div>
+			</div>
+
+			<button class="btn btn-danger my-2" v-on:click="onImgClick">눌러봐</button>
+			<div class="img-wrap">
+				<img v-bind:src="imgSrc" alt="이미지">
+			</div>
+		</div>
+	</div>
+	<script type="module" src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script type="module" src="../js/index.js"></script>
+</body>
+</html>
